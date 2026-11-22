@@ -403,3 +403,7 @@ details p{padding:0 22px 20px;color:var(--muted)}
   .logo{font-size:16px}
   .post-img{height:150px}
 }
+
+/* service card → article link */
+.card-link{font-size:15px;font-weight:600;color:var(--accent);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s cubic-bezier(.2,.8,.2,1);align-self:flex-start}
+.card-link:hover{text-decoration:none;background-size:100% 1px}
