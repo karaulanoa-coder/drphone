@@ -407,3 +407,12 @@ details p{padding:0 22px 20px;color:var(--muted)}
 /* service card → article link */
 .card-link{font-size:15px;font-weight:600;color:var(--accent);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s cubic-bezier(.2,.8,.2,1);align-self:flex-start}
 .card-link:hover{text-decoration:none;background-size:100% 1px}
+
+/* service landing pages */
+.article img.wide{aspect-ratio:16/10;object-fit:cover}
+.article .lead{margin-bottom:8px}
+.article .table-wrap{margin:10px 0 8px}
+.article .table-wrap table{margin:0;border:0;border-radius:0}
+.brand-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.brand-links a{padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--text);font-weight:600;font-size:15px;transition:border-color .15s,transform .15s cubic-bezier(.2,.8,.2,1)}
+.brand-links a:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-2px)}
