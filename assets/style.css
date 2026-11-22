@@ -321,8 +321,9 @@ details p{padding:0 22px 20px;color:var(--muted)}
   .sec-head{margin-bottom:22px}
 
   /* карточки в одну колонку */
-  .symptoms,.cards,.steps,.guar,.gallery,.posts,.posts.with-img,
+  .symptoms,.cards,.steps,.guar,.posts,.posts.with-img,
   .c-grid,.posts.with-img{grid-template-columns:1fr}
+  .gallery{gap:8px}
   .symptom{padding:15px 16px;gap:9px}
   .symptom .ic{width:38px;height:38px;border-radius:10px}
   .symptom .ic svg{width:20px;height:20px}
