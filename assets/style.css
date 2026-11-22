@@ -174,6 +174,36 @@ details p{padding:0 22px 20px;color:var(--muted)}
 .c-card p{color:#cfd5de;margin-top:8px}
 .c-card .btn{margin-top:16px}
 
+/* callback form */
+.c-card-form{grid-column:1/-1}
+.callback-form{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:16px 16px;max-width:720px}
+.callback-form .field{display:flex;flex-direction:column;gap:6px}
+.callback-form label{font-size:13px;color:#8b94a3}
+.callback-form input[type=text],.callback-form input[type=tel]{
+  background:#11161d;border:1px solid #2a313c;border-radius:10px;color:#fff;
+  padding:12px 14px;font-size:16px;font-family:var(--font);transition:.15s}
+.callback-form input[type=text]:focus,.callback-form input[type=tel]:focus{
+  outline:none;border-color:var(--accent)}
+.callback-form input.invalid{border-color:#e5484d}
+.field-error{font-size:13px;color:#e5484d;min-height:16px}
+.callback-form .consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#b9c0cc}
+.callback-form .consent input{margin-top:4px;flex:none}
+.callback-form .consent a{color:#cfd5de;text-decoration:underline}
+.callback-form button{grid-column:1/-1;justify-self:start}
+.callback-form button[disabled]{opacity:.6;cursor:default}
+.form-status{grid-column:1/-1;font-size:14px;min-height:20px}
+.form-status.ok{color:#4ade80}
+.form-status.err{color:#e5484d}
+@media (max-width:820px){.callback-form{grid-template-columns:1fr}}
+
+/* hero entrance (plays once on load, respects reduced motion) */
+.hero .container>div:first-child{animation:hero-up .6s cubic-bezier(.22,1,.36,1) both}
+.hero-visual{animation:hero-up .6s cubic-bezier(.22,1,.36,1) .12s both}
+@keyframes hero-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .hero .container>div:first-child,.hero-visual{animation:none}
+}
+
 /* footer */
 .footer{background:#0a0d12;color:#8b94a3;padding:40px 0 100px;font-size:14px}
 .footer .container{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}

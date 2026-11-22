@@ -414,6 +414,28 @@
         <p>Выезд по всему Мариуполю.<br>Левобережный район — бесплатно.</p>
         <p>Работаю на выезде: привожу запчасти с собой,<br>технику принимаю по договорённости.</p>
       </div>
+      <div class="c-card c-card-form">
+        <div class="lbl">Заказать звонок</div>
+        <p>Оставьте имя и телефон — перезвоним в течение рабочего дня (10:00–20:00) и уточним детали ремонта.</p>
+        <form id="callback-form" class="callback-form" novalidate>
+          <div class="field">
+            <label for="cb-name">Как к вам обращаться</label>
+            <input id="cb-name" name="name" type="text" autocomplete="name" placeholder="Имя" required>
+            <span class="field-error" data-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="cb-phone">Телефон для связи</label>
+            <input id="cb-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" required>
+            <span class="field-error" data-for="phone"></span>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>Согласен(на) на обработку персональных данных согласно <a href="privacy.html" target="_blank" rel="noopener">политике конфиденциальности</a></span>
+          </label>
+          <button type="submit" class="btn btn-primary" id="cb-submit">Отправить заявку</button>
+          <p class="form-status" id="cb-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -428,7 +450,7 @@
     </div>
     <div>
       <p>Районы: Левобережный, Центральный, Приморский, Кальмиусский</p>
-      <p><a href="blog/index.html">Блог</a> · <a href="#price">Цены</a> · <a href="#contacts">Контакты</a></p>
+      <p><a href="blog/index.html">Блог</a> · <a href="#price">Цены</a> · <a href="#contacts">Контакты</a> · <a href="privacy.html">Политика конфиденциальности</a></p>
     </div>
     <div>
       <p><a href="tel:+79496090643">+7 949 609-06-43</a></p>
