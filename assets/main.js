@@ -63,6 +63,7 @@ const CALLBACK_ENDPOINT = 'https://REPLACE-ME.workers.dev/notify';
         })
       });
       if (!res.ok) throw new Error('bad status');
+      if (window.ym) ym(114507236, 'reachGoal', 'callback_form');
       status.textContent = 'Заявка отправлена. Мы перезвоним в рабочее время.';
       status.className = 'form-status ok';
       form.reset();
